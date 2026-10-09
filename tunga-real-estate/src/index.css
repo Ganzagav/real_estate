@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  /* Tunga Architectural Palette */
+  --color-brand-sand: #d6d1c9; 
+  --color-brand-charcoal: #1a1a1a;
+  --color-brand-white: #fdfdfd;
+  --color-brand-border: #e5e5e5;
+  --color-brand-border-dark: #2a2a2a;
+  --color-brand-text-muted: #6b7280;
+}
+
+body {
+  @apply bg-brand-white text-brand-charcoal antialiased font-sans;
+}
+
+/* Custom utility for the thin architectural grid lines */
+.grid-borders {
+  @apply border-t border-brand-border;
+}
+.grid-borders-dark {
+  @apply border-t border-brand-border-dark;
+}
